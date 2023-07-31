@@ -8,6 +8,16 @@
     border-bottom: 1px solid black;
 }
 
+#allPro {
+    border-radius: 50px;
+    background-color: rgb(0, 100, 158);
+
+
+
+}
+
+
+
 #projectCol {
     margin: auto;
 }

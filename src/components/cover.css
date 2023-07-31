@@ -11,8 +11,14 @@
     background-color: rgb(0, 100, 158);
     color: rgb(250, 238, 238);
     border: none;
+}
 
-
+@media screen and (max-width:500px) {
+    #messageCol {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start
+    }
 }
 
 #logoCol {
