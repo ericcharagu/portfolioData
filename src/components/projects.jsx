@@ -13,7 +13,11 @@ function Projects() {
     window.location.href = "/pdf/renewable.html";
   };
   return (
-    <div className="container-fluid" style={{ marginTop: "50px" }}>
+    <div
+      className="container-fluid"
+      id="projectDiv"
+      style={{ marginTop: "50px" }}
+    >
       <h3>PROJECTS</h3>
       <div className="row">
         {/*  <div className="col" style={{ float: "right", textAlign: "right" }}>
@@ -55,7 +59,7 @@ function Projects() {
                 <p style={{ fontSize: "15px" }}>{data.Summary}</p>
               </Card.Text>
               <Card.Footer className="projectCardFooter">
-                <button className="btn" id="allPro">
+                <button className="btn" id="dataBtn">
                   <a
                     style={{
                       textDecoration: "None",

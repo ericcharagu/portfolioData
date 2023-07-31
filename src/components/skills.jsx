@@ -6,7 +6,7 @@ function Skills() {
   return (
     <div className="container-fluid" style={{ marginTop: "50px" }}>
       <h3>SKILLS</h3>
-      <Row xs={1} md={2} sm={2} className="g-4">
+      <Row xs={1} md={2} className="g-4">
         {allSkills.map((data, key) => {
           return (
             <Col key={key}>

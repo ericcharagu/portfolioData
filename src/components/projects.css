@@ -2,23 +2,29 @@
     text-align: left;
     margin: 15px;
     border: none;
+    width: auto;
 }
 
 #projectCardTitle {
     border-bottom: 1px solid black;
 }
 
-#allPro {
+#dataBtn {
+    margin-top: 15px;
     border-radius: 50px;
     background-color: rgb(0, 100, 158);
 
 }
 
+@media screen and (max-width:700px) {
+    #projectDiv {
+        padding-left: 0;
+    }
+}
+
 .projectCardFooter {
     padding: 0;
 }
-
-
 
 #projectCol {
     margin: auto;

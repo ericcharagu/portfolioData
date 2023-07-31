@@ -47,7 +47,13 @@ function Message() {
         <h6 id="messageSub" style={{ fontFamily: "'Roboto Mono', monospace" }}>
           Send a message
         </h6>
-        <p style={{ fontFamily: "'Cousine', monospace", fontSize: "15px" }}>
+        <p
+          style={{
+            fontFamily: "'Cousine', monospace",
+            fontSize: "15px",
+            textAlign: "left",
+          }}
+        >
           I am excited to dive into the unknown and explore the possibilities of
           the effetcs of leveraging the power data. If you have any questions or
           would like to discuss potential opportunities, please feel free to
