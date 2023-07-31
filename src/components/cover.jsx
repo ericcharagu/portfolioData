@@ -10,56 +10,43 @@ import Footer from "./footer";
 function Cover() {
   return (
     <div className="container-fluid">
-      <div className="container" id="summaryDiv">
-        <Row id="coverRow" style={{ width: "70%" }}>
-          <Col id="messageCol">
-            <Card className="messageCard">
-              <Card.Body>
-                <Card.Title>
-                  <h3>ERIC CHARAGU </h3>
-                </Card.Title>
-                <Card.Subtitle>
-                  DATA SCIENCE AND BUSINESS ANALAYST
-                </Card.Subtitle>
-                <Card.Text
-                  style={{
-                    borderTop: "1px solid  rgb(250, 238, 238)",
-                    marginTop: "19px",
-                  }}
-                >
-                  <p
-                    style={{
-                      fontFamily: "'Cousine', monospace",
-                      fontSize: "15px",
-                      marginTop: "15px",
-                    }}
-                  >
-                    Welcome to my Data Analyst portfolio! As a passionate and
-                    detail-oriented data analyst, I have honed my skills in
-                    extracting valuable insights from complex datasets to drive
-                    informed decision-making. This summary provides a glimpse
-                    into my professional journey, showcasing the projects and
-                    skills that demonstrate my expertise in the field of data
-                    analysis.
-                  </p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* <h2 className="coverName">ERIC CHARAGU</h2>
-            <h6>DATA SCIENCE AND BUSINESS ANALAYST</h6>
-            <p style={{ fontFamily: "'Cousine', monospace", fontSize: "15px" }}>
-              Welcome to my Data Analyst portfolio! As a passionate and
-              detail-oriented data analyst, I have honed my skills in extracting
-              valuable insights from complex datasets to drive informed
-              decision-making. This summary provides a glimpse into my
-              professional journey, showcasing the projects and skills that
-              demonstrate my expertise in the field of data analysis.
-            </p> */}
-          </Col>
-          <Col id="logoCol">
-            <Image src={logo} />
-          </Col>
-        </Row>
+      <div className="container-fluid" id="summaryDiv">
+        <Card className="messageCard">
+          {/* <Row id="coverRow" style={{ width: "70%" }}>
+            <Col id="messageCol"> */}
+          <Card.Body>
+            <Card.Title>
+              <h3>ERIC CHARAGU </h3>
+            </Card.Title>
+            <Card.Subtitle>
+              <h6>DATA SCIENCE AND BUSINESS ANALAYST</h6>
+            </Card.Subtitle>
+            <Card.Text
+              style={{
+                borderTop: "1px solid  rgb(250, 238, 238)",
+                marginTop: "19px",
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "'Cousine', monospace",
+                  fontSize: "15px",
+                  marginTop: "15px",
+                }}
+              >
+                Welcome to my Data Analyst portfolio! As a passionate and
+                detail-oriented data analyst, I have developed my skills in
+                extracting valuable insights from complex datasets to drive
+                informed wholistic decisions.
+              </p>
+            </Card.Text>
+          </Card.Body>
+          {/* </Col>
+            <Col id="logoCol">
+              <Image src={logo} />
+            </Col>
+          </Row> */}
+        </Card>
       </div>
       <div className="container" id="coverDiv">
         <Tools />

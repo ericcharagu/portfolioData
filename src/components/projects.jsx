@@ -39,14 +39,20 @@ function Projects() {
                   // textAlign: "center",
                 }}
               >
-                <h5>{data.Title}</h5>
+                <h4>{data.Title}</h4>
               </Card.Title>{" "}
               <Card.Subtitle>
-                <h6>Category:{data.Category}</h6>
+                <h6>
+                  <strong>Category:</strong>
+                  {data.Category}
+                </h6>
               </Card.Subtitle>
-              <h6>Skills:{data.Skills}</h6>
+              <h6>
+                <strong>Skills:</strong>
+                {data.Skills}
+              </h6>
               <Card.Text>
-                <p>{data.Summary}</p>
+                <p style={{ fontSize: "15px" }}>{data.Summary}</p>
               </Card.Text>
               <Card.Footer className="projectCardFooter">
                 <button className="btn" id="allPro">

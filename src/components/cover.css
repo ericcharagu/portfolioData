@@ -1,40 +1,30 @@
-#coverDiv {
-    margin: auto;
-    padding-bottom: 40px;
-}
-
-#coverRow {
-    width: 70%;
-}
-
 .messageCard {
     background-color: rgb(0, 100, 158);
     color: rgb(250, 238, 238);
     border: none;
+    margin: auto;
+    width: 60%;
 }
 
-@media screen and (max-width:500px) {
-    #messageCol {
+@media screen and (max-width:700px) {
+    /*   #messageCol {
         width: 100%;
         display: flex;
         justify-content: flex-start
-    }
+    } */
 }
 
-#logoCol {
+/* #logoCol {
     margin: auto;
     float: right;
-}
+} */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
     #logoCol {
         visibility: hidden;
         height: 0px
     }
 
-    #coverRow {
-        width: 90%;
-    }
 
 }
 
