@@ -3,6 +3,19 @@
     margin-bottom: 40px;
 }
 
+@media screen and (max-width:350px) {
+
+    #messageDiv {
+        width: 90%;
+        font-size: 5px;
+    }
+
+    #messageP {
+        font-size: 10px;
+    }
+
+}
+
 #sendBtn {
     /*  height: 3em;
  width: 3em; */

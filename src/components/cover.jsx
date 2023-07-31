@@ -10,7 +10,7 @@ import Footer from "./footer";
 function Cover() {
   return (
     <div className="container-fluid">
-      <div className="container-fluid" id="summaryDiv">
+      <div className="container" id="summaryDiv">
         <Row style={{ width: "70%" }}>
           <Col>
             <Card className="messageCard">
@@ -56,7 +56,7 @@ function Cover() {
               demonstrate my expertise in the field of data analysis.
             </p> */}
           </Col>
-          <Col style={{ margin: "auto", float: "right" }}>
+          <Col id="logoCol">
             <Image src={logo} />
           </Col>
         </Row>
