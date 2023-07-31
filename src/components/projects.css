@@ -1,0 +1,13 @@
+#projectCard {
+    text-align: left;
+    margin: 30px;
+    border: none;
+}
+
+#projectCardTitle {
+    border-bottom: 1px solid black;
+}
+
+#projectCol {
+    margin: auto;
+}

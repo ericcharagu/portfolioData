@@ -1,0 +1,30 @@
+#messageDiv {
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+#sendBtn {
+    /*  height: 3em;
+ width: 3em; */
+    /* background-color: rgb(0, 100, 158); */
+    color: rgb(250, 238, 238);
+    border-radius: 20px;
+    float: right
+}
+
+#clearBtn {
+    border-radius: 50px;
+    background-color: rgb(0, 100, 158);
+    color: rgb(250, 238, 238);
+    float: left;
+}
+
+.form-label {
+    font-family: 'Cousine', monospace;
+    font-size: 15px;
+
+}
+
+.formGroup {
+    margin: 10px;
+}

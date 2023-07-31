@@ -1,0 +1,12 @@
+.projectCard {
+    margin: 29px;
+    text-align: left;
+    border: none;
+    font-family: 'Cousine', monospace;
+
+}
+
+.projectCardFooter {
+    background-color: white;
+
+}
