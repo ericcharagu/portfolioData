@@ -26,15 +26,10 @@ function NavBar() {
   window.addEventListener("resize", showButton);
 
   return (
-    <Navbar fixed="top" className="lg" expand="sm">
-      <div className="container-fluid">
-        <Link
-          to="/home"
-          active
-          className="navbar-logo"
-          onClick={closeMobileMenu}
-        >
-          <Image src={echara} />
+    <Navbar fixed="top" id="navBar" expand="sm">
+      <div className="container" id="navCont">
+        <Link to="/home" className="navbar-logo" onClick={closeMobileMenu}>
+          <Image src={echara} fluid />
         </Link>
         {/*  <div className="menu-icon" onClick={handleClick}>
               <i className={click ? "fas fa-times" : "fas fa-bars"} />

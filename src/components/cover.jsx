@@ -11,7 +11,7 @@ function Cover() {
   return (
     <div className="container-fluid">
       <div className="container" id="summaryDiv">
-        <Row style={{ width: "70%" }}>
+        <Row id="coverRow" style={{ width: "70%" }}>
           <Col>
             <Card className="messageCard">
               <Card.Body>

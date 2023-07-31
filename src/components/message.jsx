@@ -24,7 +24,7 @@ function Message() {
       });
 
       alert("Your Email has been sent. I will be in touch shortly");
-      document.getElementById("messageForm").reset();
+      clearForm();
 
       const resJson = await res.JSON();
       /*    if (res.status === 200) {
@@ -57,11 +57,7 @@ function Message() {
           contact me.
         </p>
 
-        <Form
-          onSubmit={handleMessage}
-          id="messageForm"
-          className="registerForm"
-        >
+        <Form id="messageForm" className="registerForm">
           <Row>
             <Col>
               <Form.Group className="formGroup">
