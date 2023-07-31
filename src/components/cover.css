@@ -16,7 +16,7 @@
     float: right;
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:500px) {
     #logoCol {
         visibility: hidden;
         height: 0px
