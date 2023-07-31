@@ -1,24 +1,5 @@
 import React, { useState } from "react";
 import { Col, Row, FloatingLabel, Form, Alert } from "react-bootstrap";
-const MONGO_KEY = process.env.MONGO_DB_KEY;
-const { MongoClient, ServerApiVersion } = require("mongodb");
-const uri =
-  "mongodb+srv://vercel-admin-user:Hma74yk4wcRoaAsN@basecluster.awlzr36.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
-import "./message.css";
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
-
-/* const sendMessage = (event) => {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-  alert("Message Sent successfully");
-  Array.from(document.querySelector("input")).forEach(
-    (event) => (event.target = "")
-  );
-  console.log(data);
-}; */
-
 function Message() {
   const clearForm = () => {
     document.getElementById("messageForm").reset();
