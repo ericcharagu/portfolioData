@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Col, Row, FloatingLabel, Form, Alert } from "react-bootstrap";
+import "./message.css";
 function Message() {
   const clearForm = () => {
     document.getElementById("messageForm").reset();
