@@ -2,24 +2,46 @@
     background-color: rgb(0, 100, 158);
 }
 
+#navId {
+    background-color: rgb(0, 100, 158);
+}
+
 #navUl {
     list-style: none;
     display: flex;
     margin: 1em;
 }
 
-@media screen and (max-width:500px) {
-    #navUl {
-        visibility: hidden;
+@media screen and (min-width:500px) {
+    #basic-navbar-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
-    #navBar {
-        width: 20%;
-        height: 5%;
-        background: transparent;
-
-    }
 }
+
+#navLink {
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+    color: rgb(250, 238, 238);
+
+}
+
+#navList {
+
+    display: flex;
+
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#navId {}
 
 .navLinks {
 
