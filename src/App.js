@@ -16,7 +16,7 @@ function App() {
         <Analytics />
         <NavBar />
         <Routes>
-          <Route path="/home" element={<Cover />} />
+          <Route path="/home" exact element={<Cover />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/portfolio" element={<Portfolio />} />
