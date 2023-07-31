@@ -8,10 +8,12 @@ import Projects from "./components/projects";
 import Message from "./components/message";
 import Portfolio from "./components/portfolio";
 import IFrame from "./components/nb";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <Router>
       <div className="App">
+        <Analytics />
         <NavBar />
         <Routes>
           <Route path="/home" element={<Cover />} />
