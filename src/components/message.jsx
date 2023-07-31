@@ -64,7 +64,7 @@ function Message() {
           <Row>
             <Col>
               <Form.Group className="formGroup">
-                <Form.Label className="form-label">FIRST NAME</Form.Label>
+                <Form.Label className="form-label">First Name</Form.Label>
                 <Form.Control
                   type="text"
                   className="form-control"
@@ -76,7 +76,7 @@ function Message() {
             <Col>
               <Form.Group className="formGroup">
                 {" "}
-                <Form.Label className="form-label">LAST NAME</Form.Label>
+                <Form.Label className="form-label">Last Name</Form.Label>
                 <Form.Control
                   type="text"
                   className="form-control"
@@ -88,7 +88,7 @@ function Message() {
           </Row>
           <Form.Group className="formGroup">
             {" "}
-            <Form.Label className="form-label">EMAIL</Form.Label>
+            <Form.Label className="form-label">Email address</Form.Label>
             <Form.Control
               type="text"
               className="form-control"

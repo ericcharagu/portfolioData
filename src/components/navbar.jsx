@@ -8,7 +8,7 @@ function NavBar() {
     <Navbar sticky="top" expand="sm" id="navId">
       <Container>
         <Navbar.Brand href="/home">
-          <Image src={echara} fluid />
+          <Image roundedCircle src={echara} fluid />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
