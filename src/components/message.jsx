@@ -1,41 +1,42 @@
-import React, { useState } from "react";
-import { Col, Row, FloatingLabel, Form, Alert } from "react-bootstrap";
+import React, { useRef, useState } from "react";
+import { Col, Row, Form, Alert } from "react-bootstrap";
 import "./message.css";
+import emailjs from "@emailjs/browser";
+
 function Message() {
   const clearForm = () => {
     document.getElementById("messageForm").reset();
   };
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  //const [name] = firstName + "" + lastName;
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  let handleMessage = async (e) => {
+  let handleMessage = (e) => {
     e.preventDefault();
-    console.log({ firstName });
-    try {
-      let res = await fetch("", {
-        method: "POST",
-        body: JSON.stringify({
-          firstName: firstName,
-          lastName: lastName,
-          email: email,
-          message: message,
-        }),
-      });
 
-      alert("Your Email has been sent. I will be in touch shortly");
-      clearForm();
-
-      const resJson = await res.JSON();
-      /*    if (res.status === 200) {
-        setFirstName("");
-        setLastName("");
-        setEmail("");
-      } else {
-      } */
-    } catch (err) {
-      console.log(err);
-    }
+    const userData = JSON.stringify({
+      name: firstName + lastName,
+      email: email,
+      message: message,
+    });
+    console.log(userData);
+    emailjs
+      .send(
+        "service_28h0jap",
+        "template_ospx5uj",
+        userData,
+        "IH5KkTaYU30iuRBb6"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    document.getElementById("messageForm").reset();
   };
 
   return (
