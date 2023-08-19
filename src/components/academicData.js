@@ -1,20 +1,20 @@
 export const timeLine = [
   {
     title: "Sept 2014",
-    cardTitle: "Alliance High School",
-    cardSubtitle: "Final Grade: A",
-    cardDetailedText: "Rugby Captain. Social Welfare Society(SWS) Treasurer",
+    cardTitle: "Kenya Certificate of Secondary Education",
+    cardSubtitle: "Alliance High School",
+    cardDetailedText: "Final Grade:A",
   },
   {
     title: "Sept 2020",
     cardTitle: "BSc. Electrical and Electronics Engineering",
-    cardSubtitle: "University of Nairobi, Kenya",
+    cardSubtitle: "University of Nairobi",
     cardDetailedText: "Second Upper Class honors(2:1)",
   },
   {
     title: "June 2021",
     cardTitle: "Energy within environmental constraints",
-    cardSubtitle: "HavardX, United States of America",
+    cardSubtitle: "HavardX",
     cardDetailedText: "Final Grade: A",
   },
   {

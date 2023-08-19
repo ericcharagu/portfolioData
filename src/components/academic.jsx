@@ -11,7 +11,7 @@ function Academic() {
         items={timeLine}
         mode="VERTICAL_ALTERNATING"
         slideShow
-        slideItemDuration={2000}
+        slideItemDuration={4000}
         borderLessCards
         scrollable
         cardWidth={300}
@@ -32,9 +32,11 @@ function Academic() {
         }}
         classNames={{
           card: "my-card",
+          cardMedia: "my-card-media",
           cardSubTitle: "my-card-subtitle",
           cardText: "my-card-text",
           cardTitle: "my-card-title",
+          controls: "my-controls",
           title: "my-title",
         }}
       />
