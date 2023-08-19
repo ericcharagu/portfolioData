@@ -1,0 +1,23 @@
+.timelineCard {
+    height: 1em;
+}
+
+.my-card-title,
+.my-card-text,
+.my-card-subtitle {
+    font-family: 'Cousine', monospace;
+    font-size: 15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.my-card {
+    border: none;
+}
+
+
+#timelineDiv {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}

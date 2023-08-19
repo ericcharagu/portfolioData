@@ -7,6 +7,7 @@ import Projects from "./projects";
 import Tools from "./tools";
 import Message from "./message";
 import Footer from "./footer";
+import Academic from "./academic";
 function Cover() {
   return (
     <div className="container-fluid">
@@ -52,6 +53,7 @@ function Cover() {
         <Tools />
         <Skills />
         <Projects />
+        <Academic />
         <Message />
       </div>
       <Footer />

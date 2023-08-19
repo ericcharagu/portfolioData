@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Carousel } from "react-bootstrap";
 import "./projects.css";
 import { allProjects } from "./portfolioData";
-
+import { Document, Page } from "react-pdf";
 function Projects() {
   const items = useState(allProjects);
   const showItems = useState(3);

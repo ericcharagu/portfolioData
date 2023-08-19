@@ -7,7 +7,9 @@ import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Message from "./components/message";
 import Portfolio from "./components/portfolio";
-import IFrame from "./components/nb";
+import Academic from "./components/academic";
+import heartPred from "./pdf/heart_pred.pdf";
+import Notebook from "./components/nb";
 import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
@@ -16,12 +18,21 @@ function App() {
         <Analytics />
         <NavBar />
         <Routes>
-          <Route path="/home" exact element={<Cover />} />
+          <Route exact path="/" element={<Cover />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/message" element={<Message />} />
-          <Route path="/notebook" element={<IFrame />} />
+          <Route
+            path="/linkedIn"
+            component={() => {
+              window.location.href =
+                "www.linkedin.com/in/eric-charagu-150799181";
+              return null;
+            }}
+          />
+          <Route path="/academic" element={<Academic />} />
+          <Route path="/notebook" element={<Notebook />} />
         </Routes>
       </div>
     </Router>

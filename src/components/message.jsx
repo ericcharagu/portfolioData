@@ -1,49 +1,20 @@
 import React, { useRef, useState } from "react";
-import { Col, Row, Form, Alert } from "react-bootstrap";
+import { Col, Row, Image } from "react-bootstrap";
 import "./message.css";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import LinkedIn from "../img/misc/linked.png";
+import Gmail from "../img/misc/gmail.png";
 
 function Message() {
-  const clearForm = () => {
-    document.getElementById("messageForm").reset();
-  };
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  //const [name] = firstName + "" + lastName;
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  let handleMessage = (e) => {
-    e.preventDefault();
-
-    const userData = JSON.stringify({
-      name: firstName + lastName,
-      email: email,
-      message: message,
-    });
-    console.log(userData);
-    emailjs
-      .send(
-        "service_28h0jap",
-        "template_ospx5uj",
-        userData,
-        "IH5KkTaYU30iuRBb6"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    document.getElementById("messageForm").reset();
-  };
+  const [isClicked, setIsClicked] = useState(false);
+  const [isClickedAlt, setIsClickedAlt] = useState(false);
 
   return (
     <div>
       {" "}
       <div className="container-fluid" id="messageDiv">
-        <h3 className="messageTitle">CONTACT</h3>
+        <h3 className="messageTitle">CONNECT</h3>
 
         <h6 id="messageSub" style={{ fontFamily: "'Roboto Mono', monospace" }}>
           Send a message
@@ -57,11 +28,65 @@ function Message() {
         >
           I am excited to dive into the unknown and explore the possibilities of
           the effetcs of leveraging the power data. If you have any questions or
-          would like to discuss potential opportunities, please feel free to
-          contact me.
+          would like to discuss potential opportunities,lets connect.
         </p>
+        <Row
+          style={{
+            width: "70%",
+            margin: "auto",
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          <Col className="conLogos">
+            <button
+              onClick={() => setIsClickedAlt(!isClickedAlt)}
+              style={{ border: "none", backgroundColor: "inherit" }}
+            >
+              <Image
+                src={LinkedIn}
+                rounded
+                fluid
+                style={{ margin: "auto" }}
+                alt="https://icons8.com/icon/vWcULbkKy3DN/linkedin-2"
+              />{" "}
+              <p>LinkedIn</p>
+              {isClickedAlt && (
+                <div className="container-fluid">
+                  {" "}
+                  <a
+                    href="https://www.linkedin.com/in/eric-charagu-150799181"
+                    target="_blank"
+                    className="conLink"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn Profile
+                  </a>
+                </div>
+              )}
+            </button>
+          </Col>
+          <Col>
+            <button
+              onClick={() => setIsClicked(!isClicked)}
+              style={{ border: "none", backgroundColor: "inherit" }}
+            >
+              <Image
+                src={Gmail}
+                fluid
+                alt="https://icons8.com/icon/qyRpAggnV0zH/gmail"
+              />
+              <p>Gmail</p>
+              {isClicked && (
+                <div className="container-fluid">
+                  <p>charagumacharia@gmail.com</p>
+                </div>
+              )}
+            </button>
+          </Col>
+        </Row>
 
-        <Form id="messageForm" className="registerForm">
+        {/*         <Form id="messageForm" className="registerForm">
           <Row>
             <Col>
               <Form.Group className="formGroup">
@@ -122,7 +147,7 @@ function Message() {
               </Col>
             </Row>
           </Form.Group>
-        </Form>
+        </Form> */}
       </div>
     </div>
   );

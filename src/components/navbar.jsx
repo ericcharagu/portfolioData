@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <Navbar sticky="top" expand="sm" id="navId">
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
           <Image roundedCircle src={echara} fluid />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,10 +17,10 @@ function NavBar() {
               SKILLS
             </Nav.Link>
             <Nav.Link id="navLink" href="/projects">
-              PROJECT
+              PROJECTS
             </Nav.Link>
             <Nav.Link id="navLink" href="/message">
-              CONTACT
+              CONNECT
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

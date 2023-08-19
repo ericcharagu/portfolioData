@@ -1,28 +1,19 @@
 import React, { useState, useRef } from "react";
-import { allProjects } from "./portfolioData";
+import { Document, Page } from "react-pdf";
+import heartPred from "../pdf/heart_pred.pdf";
+import { pdfjs } from "react-pdf";
 
-const IFrame = ({ url }) => {
-  const [iFrameLoaded, setIFrameLoaded] = useState(false);
-  const divBoxRef = useRef(null);
-  const resizeIframe = (iframe) => {
-    // .. resize iFrame container divBoxRef as needed.
-  };
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.js",
+  import.meta.url
+).toString();
 
+function Notebook() {
   return (
-    <div ref={divBoxRef} className=" relative text-gray-600">
-      {!iFrameLoaded && (
-        <span className="inline-block">loading notebook ...</span>
-      )}
-
-      <iframe
-        onLoad={(e) => {
-          setIFrameLoaded(true);
-          resizeIframe(e.target);
-        }}
-        title="static_html"
-        src="../pdf/renewable.html"
-      ></iframe>
+    <div className="container-fluid">
+      {" "}
+      <Document file={heartPred} />
     </div>
   );
-};
-export default IFrame;
+}
+export default Notebook;

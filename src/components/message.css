@@ -35,10 +35,16 @@
     float: left;
 }
 
-.form-label {
+.conLink {
+    text-decoration: none;
+    color: black;
     font-family: 'Cousine', monospace;
     font-size: 15px;
+}
 
+.contactLink {
+    text-decoration: none;
+    color: black;
 }
 
 .formGroup {
