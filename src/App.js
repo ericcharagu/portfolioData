@@ -23,16 +23,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/message" element={<Message />} />
-          <Route
-            path="/linkedIn"
-            component={() => {
-              window.location.href =
-                "www.linkedin.com/in/eric-charagu-150799181";
-              return null;
-            }}
-          />
           <Route path="/academic" element={<Academic />} />
-          <Route path="/notebook" element={<Notebook />} />
         </Routes>
       </div>
     </Router>
