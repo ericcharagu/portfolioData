@@ -10,6 +10,10 @@
     text-align: left;
 }
 
+.my-card-title,
+.my-card-subtitle {
+    font-weight: bold
+}
 
 
 .my-card {
@@ -18,7 +22,7 @@
 
 
 #timelineDiv {
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-bottom: 40px;
 }
