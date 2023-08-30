@@ -3,17 +3,12 @@
 }
 
 .my-card-title,
-.my-card-text,
 .my-card-subtitle {
     font-family: 'Cousine', monospace;
-    font-size: 15px;
     text-align: left;
-}
-
-.my-card-title,
-.my-card-subtitle {
     font-weight: bold
 }
+
 
 
 .my-card {

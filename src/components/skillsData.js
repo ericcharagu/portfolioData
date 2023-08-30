@@ -29,7 +29,7 @@ export const allSkills = [
   {
     Title: "Buildings Energy Consultation",
     Concepts: "Identifying energy generators and sinks",
-    Desc: "Develop plans for integrated energy systems between differnt buildings for a greener sustainable urban area",
+    Desc: "Develop plans for integrated energy systems between differnt facilities(hospitals, schools) for a greener sustainable urban area",
   },
   {
     Title: "Cloud Services and Integration",

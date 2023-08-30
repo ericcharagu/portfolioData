@@ -27,8 +27,8 @@ function Message() {
           }}
         >
           I am excited to dive into the unknown and explore the possibilities of
-          the effetcs of leveraging the power data. If you have any questions or
-          would like to discuss potential opportunities,lets connect.
+          the effects of leveraging the power data. If you have any questions or
+          would like to discuss potential opportunities,let's connect.
         </p>
         <Row
           style={{

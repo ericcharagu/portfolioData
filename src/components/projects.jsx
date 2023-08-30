@@ -2,16 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Card, Carousel } from "react-bootstrap";
 import "./projects.css";
 import { allProjects } from "./portfolioData";
-import { Document, Page } from "react-pdf";
 function Projects() {
   const items = useState(allProjects);
   const showItems = useState(3);
-  /*  const handleShowMore = () => {
-    showItems: showItems >= items.length ? showItems : showItems + 1;
-  }; */
-  const goNotebook = () => {
-    window.location.href = "/pdf/renewable.html";
-  };
+
   return (
     <div
       className="container-fluid"
@@ -19,19 +13,6 @@ function Projects() {
       style={{ marginTop: "50px" }}
     >
       <h3>PROJECTS</h3>
-      <div className="row">
-        {/*  <div className="col" style={{ float: "right", textAlign: "right" }}>
-          <button className="btn" id="allPro">
-            {" "}
-            <a
-              href="/portfolio"
-              style={{ textDecoration: "none", color: "rgb(250, 238, 238)" }}
-            >
-              Show All
-            </a>
-          </button>
-        </div> */}
-      </div>
 
       {allProjects.map((data, key) => {
         return (

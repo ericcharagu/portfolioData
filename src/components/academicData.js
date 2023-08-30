@@ -35,16 +35,14 @@ export const timeLine = [
     cardTitle:
       "Advanced Electrical and Electronics Engineering with management MSc.",
     cardSubtitle: "University of Leicester",
-    cardDetailedText: [
-      "Distinction",
-      "Dissertation:  The role of data privacy on the urbanisation of rural farmlands in regulated and unregulated markets",
-    ],
+    cardDetailedText: "Distinction",
   },
   {
     title: "July 2022",
     cardTitle: "Best Student Prize 21/22 ",
     cardSubtitle: "University of Leicester",
-    cardDetailedText: "Distinction",
+    cardDetailedText:
+      "Dissertation:  The role of data privacy on the urbanisation of rural farmlands in regulated and unregulated markets",
   },
   {
     title: "June 2023",
