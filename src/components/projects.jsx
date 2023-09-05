@@ -39,20 +39,6 @@ function Projects() {
               <Card.Text>
                 <p style={{ fontSize: "15px" }}>{data.Summary}</p>
               </Card.Text>
-              <Card.Footer className="projectCardFooter">
-                <button className="btn" id="dataBtn">
-                  <a
-                    style={{
-                      textDecoration: "None",
-                      color: " rgb(250, 238, 238)",
-                    }}
-                    href={data.Dataset}
-                    target="_blank"
-                  >
-                    Dataset
-                  </a>
-                </button>
-              </Card.Footer>
             </Card.Body>
           </Card>
         );

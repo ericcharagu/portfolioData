@@ -4,7 +4,7 @@ export const allProjects = [
     Category: "Supervised Learning - Classification",
     Skills: "Logistic Regression, AUC-ROC Curve",
     Summary:
-      "Based on the patient's measured heart and vessel parameters, a classification model was chosen to predict the likelihood of a patient developing heart disease. The base model was tuned using the ROC curve to obtain the optimal threshold. The model adjusted with this threshold achieved recall and F1 values of ~79% and ~84% respectively on the training data.",
+      "An inital linear model was built to explain predict the likelihood for an individiual to get a heart attach. The base model was tuned using the Receiver Operting Charactertistc (ROC) curve to obtain the optimal threshold for highest accuracy. The model adjusted with this threshold achieved recall and F1 values of ~79% and ~84% respectively on the training data.",
     Dataset:
       "https://www.kaggle.com/datasets/utkarshx27/heart-disease-diagnosis-dataset",
     File: "/pdf/renewable.html",
@@ -14,7 +14,7 @@ export const allProjects = [
     Category: "Supervised Learning ",
     Skills: "Logistic Regression",
     Summary:
-      "The energy consumption is estimated based on the different weather groups(1-5). These groups are based on the different conditions such as temperature, humidity, etc. Linear models are built for each group which can explain ~78% to 90% of the variance in the datasets",
+      " The client is an architectural design firm that is looking to give structural and electrical based designs based on the client's current and future energy usage. The model is trained on 5 distinct climatic conditions and can explain more than 75% of the variance for each group's dataset",
     Dataset:
       "https://www.kaggle.com/datasets/samanemami/renewable-energy-and-weather-conditions",
     File: "",
