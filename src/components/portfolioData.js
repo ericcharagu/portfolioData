@@ -7,7 +7,7 @@ export const allProjects = [
       "An inital linear model was built to explain predict the likelihood for an individiual to get a heart attach. The base model was tuned using the Receiver Operting Charactertistc (ROC) curve to obtain the optimal threshold for highest accuracy. The model adjusted with this threshold achieved recall and F1 values of ~79% and ~84% respectively on the training data.",
     Dataset:
       "https://www.kaggle.com/datasets/utkarshx27/heart-disease-diagnosis-dataset",
-    File: "/pdf/renewable.html",
+    File: "https://github.com/ericcharagu/heart_attack/blob/main/Heart_Disease_predictor.ipynb",
   },
   {
     Title: "Energy Consumption Model Predictor",
@@ -17,43 +17,45 @@ export const allProjects = [
       " The client is an architectural design firm that is looking to give structural and electrical based designs based on the client's current and future energy usage. The model is trained on 5 distinct climatic conditions and can explain more than 75% of the variance for each group's dataset",
     Dataset:
       "https://www.kaggle.com/datasets/samanemami/renewable-energy-and-weather-conditions",
-    File: "",
+    File: "https://github.com/ericcharagu/energy_consumption/blob/main/energy_consumption.ipynb",
   },
   {
-    Title: "Trade & Ahead",
+    Title: "Stock Clustering",
     Category: "Unsupervised Learning",
     Skills: "K-Means Clustering,Hierarchical Clustering ",
     Summary:
-      "Analyze the stocks data, grouping the stocks based on the attributes provided, and sharing insights about the characteristics of each group.",
+      "Analyze the stocks data, grouping the stocks based on the attributes provided, and sharing insights about the characteristics of each group. The groups are based on a risk profile ranging from low risk to high risk",
     Dataset: "https://eportfolio.mygreatlearning.com/eric-charagu",
-    File: "",
+    File: "https://github.com/ericcharagu/stock_clustering/blob/main/Stock_clustering.ipynb",
   },
   {
-    Title: "ReneWind",
+    Title: "Generator Failure",
     Category: "Model Tuning",
     Skills: "Up and Downsampling, Regularization, Hyperparameter Tuning",
     Summary:
-      "ReneWind is a company working on improving the machinery/processes involved in the production of wind energy using machine learning and has collected data on generator failure of wind turbines using sensors. The objective is to build various classification models, tune them and find the best one that will help identify failures so that the generator could be repaired before failing/breaking and the overall maintenance cost of the generators can be brought down",
+      " The objective is to build various classification models, tune them and find the best one that will help identify failures so that the generator could be repaired before failing/breaking and the overall maintenance cost of the generators can be brought down",
     Dataset: "https://eportfolio.mygreatlearning.com/eric-charagu",
-    File: "",
+    File: "https://github.com/ericcharagu/machine_failure/blob/main/machine_failure_predictor.ipynb",
   },
   {
-    Title: "EasyVisa",
+    Title: "Successful Visa Profile",
     Category: "Ensemble Techniques",
     Skills: "Grid Search Cross Validation, Parameter tuning",
     Summary:
       "Analyze the data of Visa applicants, build a predictive model to facilitate the process of visa approvals, and based on important factors that significantly influence the Visa status recommend a suitable profile for the applicants for whom the visa should be certified or denied.",
     Dataset: "https://eportfolio.mygreatlearning.com/eric-charagu",
-    File: "",
+    File: "https://github.com/ericcharagu/visa_prediction/blob/main/visa_prediction.ipynb",
   },
-  /*   {
-    Title: "INN Hotels",
+  {
+    Title: "Hotel Booking Cancellation",
     Category: "Supervised Learning - Classification",
     Skills: "Logistic Regression, AUC-ROC Curve",
     Summary:
-      "Analyze the data of INN Hotels to find which factors strongly influence booking cancellations, build a predictive model that can predict which booking is going to be cancelled in advance, and help in formulating profitable policies for cancellations and refunds.",
+      "Analyze the data to find which factors strongly influence booking cancellations, build a predictive model that can predict which booking is going to be cancelled in advance, and help in formulating profitable policies for cancellations and refunds.",
     Dataset: "https://eportfolio.mygreatlearning.com/eric-charagu",
+    File: "https://github.com/ericcharagu/booking_cancellation/blob/main/booking_cancellation.ipynb",
   },
+  /*
   {
     Title: "ReCell",
     Category: "Supervised Learning ",

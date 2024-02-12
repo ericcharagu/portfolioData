@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Card, Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./projects.css";
 import { allProjects } from "./portfolioData";
 function Projects() {
   const items = useState(allProjects);
   const showItems = useState(3);
+  const handleClick = () => {
+    alert("Button clicked");
+  };
 
   return (
     <div
@@ -16,7 +20,7 @@ function Projects() {
 
       {allProjects.map((data, key) => {
         return (
-          <Card className="projectCard" key={key}>
+          <Card className="projectCard" key={data.File}>
             <Card.Body>
               <Card.Title
                 style={{
@@ -38,6 +42,11 @@ function Projects() {
               </h6>
               <Card.Text>
                 <p style={{ fontSize: "15px" }}>{data.Summary}</p>
+                <Link key={data.File} to={data.File} target="_blank">
+                  <button className="btn btn-success" id="projectLink">
+                    Code
+                  </button>
+                </Link>
               </Card.Text>
             </Card.Body>
           </Card>

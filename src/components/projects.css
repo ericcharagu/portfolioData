@@ -16,6 +16,13 @@
 
 }
 
+#projectLink {
+    float: right;
+    width: 10vw;
+    background-color: rgb(0, 100, 158);
+    ;
+}
+
 @media screen and (max-width:700px) {
     #projectDiv {
         padding-left: 0;
