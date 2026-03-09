@@ -1,5 +1,11 @@
 export const allProjects = [
   {
+    Title: "AI-WhatsApp integration for Lane",
+    Category: "Software Development",
+    Skills: "Context Engineering, Prompt Engineering",
+    Summary:" Initialize the core integration between WhatsApp and a Large Language Model(Qwen 3) for lane.co.ke. This system automates client query handling and product sales for auto parts.\n- Establish webhook endpoints for WhatsApp Business API. \n - Integrate LLM agent to parse user queries and identify auto parts. \n - Implement product catalog lookup and recommendation logic. \n - Enable automated order placement and checkout flow."
+  },
+  {
     Title: "Heart Attack Predictor",
     Category: "Supervised Learning - Classification",
     Skills: "Logistic Regression, AUC-ROC Curve",
