@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Card, Col, Image, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import "./skills.css";
 import { allSkills } from "./skillsData";
 function Skills() {

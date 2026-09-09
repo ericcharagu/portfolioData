@@ -2,7 +2,6 @@ import React from "react";
 import "./academic.css";
 import { Chrono } from "react-chrono";
 import { timeLine } from "./academicData";
-import { Card } from "react-bootstrap";
 function Academic() {
   return (
     <div className="conntainer-fluid" id="timelineDiv">

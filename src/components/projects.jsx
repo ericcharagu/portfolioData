@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Card, Carousel } from "react-bootstrap";
+import React, { useState } from "react";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./projects.css";
 import { allProjects } from "./portfolioData";
 function Projects() {
-  const items = useState(allProjects);
-  const showItems = useState(3);
-  const handleClick = () => {
-    alert("Button clicked");
-  };
 
   return (
     <div

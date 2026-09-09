@@ -1,8 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Col, Row, Image } from "react-bootstrap";
 import "./message.css";
-import { Link } from "react-router-dom";
-import emailjs from "@emailjs/browser";
 import LinkedIn from "../img/misc/linked.png";
 import Gmail from "../img/misc/gmail.png";
 
