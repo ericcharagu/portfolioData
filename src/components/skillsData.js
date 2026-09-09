@@ -1,39 +1,26 @@
 export const allSkills = [
   {
-    Title: "Supervised Machine Learning Techniques",
-    Concepts: "Logistic Regression, Decsion Trees,GridSerch CV",
-    Desc: "Using Python and its libraries to predict an outcome of a predetermined feature using linear models to analyse data",
+    Title: "Fine‑tuning LLMs",
+    Desc: "Adapt open‑source models (LLaMA, Mistral, Qwen) to your data using LoRA, QLoRA, and PEFT techniques."
   },
   {
-    Title: "Unsupervised Machine Learning Techniques",
-    Concepts:
-      "K-Means Clustering, Hierarchical Clustering, Principal Component Analysis(PCA) ",
-    Desc: "Using Python and its libraries to discover patterns in the features in the data",
+    Title: "RAG & Vector Databases",
+    Desc: "Build retrieval‑augmented generation pipelines with Pinecone, Weaviate, or Chroma for domain‑specific Q&A."
   },
   {
-    Title: "Sustainable Energy Development Analysis",
-    Concepts: "Climate ConsultantV",
-    Desc: "Analyse the energy consumption of a building and exploring sustainable energy options to lessen the load on traditional electric grids  ",
+    Title: "Model Deployment & Scaling",
+    Desc: "Deploy models on AWS, Azure, or on‑premise GPUs with TensorRT, ONNX, or vLLM for low‑latency inference."
   },
   {
-    Title: "Exploratory Data Analysis",
-    Concepts: "Seaborn, Matplotlib, Plotly",
-    Desc: "Visualising the data(dataset) using differnt Python libraries e.g. SKlearn",
-  },
-  /*   {
-    Title: "Front End Web Developmet",
-    Concepts: "React, Javascript",
-    Desc: "Building interative websites",
-  }, */
-
-  {
-    Title: "Buildings Energy Consultation",
-    Concepts: "Identifying energy generators and sinks",
-    Desc: "Develop plans for integrated energy systems between differnt facilities(hospitals, schools) for a greener sustainable urban area",
+    Title: "Workflow Automation",
+    Desc: "Design AI‑powered workflows using Python, LangChain, and orchestration tools (Airflow, Prefect)."
   },
   {
-    Title: "Cloud Services and Integration",
-    Concepts: "AWS, Azure",
-    Desc: "Setting up, transmitting and analysing data sent from different services on the cloud",
+    Title: "Data Engineering & ETL",
+    Desc: "Clean, transform, and prepare data for ML pipelines using pandas, Spark, and SQL."
   },
+  {
+    Title: "Consulting & Strategy",
+    Desc: "Translate business needs into AI roadmaps, build MVPs, and guide your team through adoption."
+  }
 ];

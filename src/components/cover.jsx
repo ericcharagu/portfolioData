@@ -1,64 +1,45 @@
 import React from "react";
-import { Image, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "./cover.css";
-import Skills from "./skills";
-import logo from "../img/logo.png";
-import Projects from "./projects";
-import Tools from "./tools";
-import Message from "./message";
-import Footer from "./footer";
-import Academic from "./academic";
+
 function Cover() {
   return (
-    <div className="container-fluid">
-      <div className="container-fluid" id="summaryDiv">
-        <Card className="messageCard">
-          {/* <Row id="coverRow" style={{ width: "70%" }}>
-            <Col id="messageCol"> */}
-          <Card.Body>
-            <Card.Title>
-              <h3>ERIC CHARAGU </h3>
-            </Card.Title>
-            <Card.Subtitle>
-              <h6>DATA SCIENCE AND BUSINESS ANALAYST</h6>
-            </Card.Subtitle>
-            <Card.Text
-              style={{
-                borderTop: "1px solid  rgb(250, 238, 238)",
-                marginTop: "19px",
-              }}
-            >
-              <p
-                style={{
-                  fontFamily: "'Cousine', monospace",
-                  fontSize: "15px",
-                  marginTop: "15px",
-                }}
-              >
-                Welcome to my Data Analyst portfolio! As a passionate and
-                detail-oriented data analyst, I have developed my skills in
-                extracting valuable insights from complex datasets to drive
-                informed wholistic decisions.
-              </p>
-            </Card.Text>
-          </Card.Body>
-          {/* </Col>
-            <Col id="logoCol">
-              <Image src={logo} />
-            </Col>
-          </Row> */}
-        </Card>
-      </div>
+    <div className="hero-wrapper">
+      <Container fluid className="hero-container">
+        <Row className="align-items-center hero-row">
+          <Col md={8} className="hero-text">
+            <h1 className="hero-title">AI Consulting for Every Business</h1>
+            <p className="hero-subtitle">
+              Unlock the power of open‑source AI models—deployed on your own infrastructure,
+              at 70% lower cost than proprietary solutions.
+            </p>
+            <p className="hero-description">
+              I help you automate workflows, build custom AI agents, and integrate intelligence
+              into your products. Let’s make AI affordable and accessible.
+            </p>
+            <Button href="/services" className="hero-cta">Explore Services →</Button>
+          </Col>
+          <Col md={4} className="hero-stats">
+            <div className="stat-item">
+              <span className="stat-number">70%</span>
+              <span className="stat-label">Cost savings vs. OpenAI/Anthropic</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">100%</span>
+              <span className="stat-label">Open‑source stack (LLaMA, Mistral, etc.)</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">24/7</span>
+              <span className="stat-label">Dedicated support & monitoring</span>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      {/* You can keep the rest of your sections (Skills, Projects, etc.) below */}
       <div className="container" id="coverDiv">
-        <Tools />
-        <Skills />
-        <Projects />
-        <Academic />
-        <Message />
+        {/* Include Tools, Skills, Projects, Academic, Message as before, or move to separate pages */}
       </div>
-      <Footer />
     </div>
   );
 }
-
 export default Cover;

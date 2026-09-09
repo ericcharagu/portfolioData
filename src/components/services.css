@@ -1,0 +1,38 @@
+
+.services-wrapper {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.services-heading {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 2.5rem;
+    color: rgb(0, 100, 158);
+}
+
+.service-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem 0.5rem;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 100, 158, 0.15);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cost-comparison {
+    margin-top: 4rem;
+    background: rgb(0, 100, 158);
+    color: rgb(250, 238, 238);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+}
