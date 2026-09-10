@@ -1,98 +1,73 @@
-.messageCard {
-    background-color: rgb(0, 100, 158);
-    color: rgb(250, 238, 238);
-    border: none;
-    margin: auto;
-    width: 60%;
-}
-
-@media screen and (max-width:700px) {
-    .messageCard {
-        width: 95%
-    }
-
-    /*   #messageCol {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start
-    } */
-}
-
-/* #logoCol {
-    margin: auto;
-    float: right;
-} */
-
-@media screen and (max-width:700px) {
-    #logoCol {
-        visibility: hidden;
-        height: 0px
-    }
-
-    #coverDiv {
-        width: 100%;
-    }
-
-
-}
-
-#summaryDiv {
-    height: 70%;
-    /* height: 43em; */
-    background-color: rgb(0, 100, 158);
-    color: rgb(250, 238, 238);
-    display: inline-flex;
+/* ---------- Page shell ---------- */
+.cover-page {
+    background-color: #ffffff;
+    display: flex;
     flex-direction: column;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-
+    min-height: 100vh;
 }
 
-/* @media(min-width:500px) {
-    #coverDiv {
-        width: 60%
-    }
-
-} */
-
-.coverName {
-    font-size: 32px x;
-}
+/* ---------- HERO ---------- */
 .hero-wrapper {
     background: linear-gradient(135deg, rgb(0, 100, 158) 0%, rgb(0, 70, 110) 100%);
     color: rgb(250, 238, 238);
     padding: 4rem 0;
-    min-height: 70vh;
+    min-height: calc(100svh - var(--navbar-height, 70px));
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
+.hero-row {
+    min-height: auto;
+    margin-bottom: 0;
+}
+
+.hero-text {
+    padding: 1rem 2rem;
+}
+
+/* ---------- CONTENT BELOW HERO (white) ---------- */
+.content-wrapper {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 2rem 0 0 0;
+    flex: 1;
+}
+
+#coverDiv {
+    /* keep any existing spacing you had */
+    padding-top: 1rem;
+}
+
+/* ---------- Typography ---------- */
 .hero-title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
     font-weight: 700;
     font-family: 'IBM Plex Mono', monospace;
     margin-bottom: 1rem;
+    line-height: 1.15;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.8vw, 1.4rem);
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.05rem);
     line-height: 1.6;
-    max-width: 600px;
     margin-bottom: 2rem;
+   
 }
 
+/* ---------- CTA ---------- */
 .hero-cta {
     background-color: rgb(250, 238, 238);
     color: rgb(0, 100, 158);
@@ -101,31 +76,63 @@
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .hero-cta:hover {
-    background-color: #fff;
+    background-color: #ffffff;
+    color: rgb(0, 100, 158);
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hero-stats .stat-item {
+/* ---------- Stats ---------- */
+.hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.stat-item {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
     border-radius: 12px;
     padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .stat-number {
     display: block;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 700;
 }
 
 .stat-label {
     font-size: 0.9rem;
     opacity: 0.9;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 767px) {
+    .hero-wrapper {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .hero-text,
+    .hero-stats {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-stats {
+        margin-top: 1rem;
+    }
 }

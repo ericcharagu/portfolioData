@@ -1,21 +1,27 @@
-
 .services-wrapper {
     padding: 4rem 0;
     background-color: #f8f9fa;
 }
 
-.services-heading {
+/* Heading – unified font */
+.services-heading,
+.service-title,
+.pricing-heading {
     font-family: 'IBM Plex Mono', monospace;
-    margin-bottom: 2.5rem;
     color: rgb(0, 100, 158);
 }
 
+.services-heading {
+    margin-bottom: 2.5rem;
+}
+
+/* Service cards */
 .service-card {
     border: none;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 1rem;
 }
 
 .service-card:hover {
@@ -23,16 +29,100 @@
     box-shadow: 0 8px 25px rgba(0, 100, 158, 0.15);
 }
 
-.service-icon {
-    font-size: 3rem;
+.service-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(0, 100, 158);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: #333;
     margin-bottom: 1rem;
 }
 
-.cost-comparison {
+.service-metric {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(0, 100, 158);
+    background: rgba(0, 100, 158, 0.08);
+    padding: 0.75rem;
+    border-radius: 10px;
+    border-left: 4px solid rgb(0, 100, 158);
+}
+
+/* Pricing sections */
+.pricing-section {
     margin-top: 4rem;
-    background: rgb(0, 100, 158);
-    color: rgb(250, 238, 238);
-    padding: 2rem;
+    background: #fff;
+    padding: 2.5rem;
     border-radius: 16px;
-    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.pricing-heading {
+    margin-bottom: 1rem;
+}
+
+.pricing-intro {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.pricing-table th {
+    background-color: rgb(0, 100, 158);
+    color: rgb(250, 238, 238);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    vertical-align: middle;
+}
+
+.pricing-table td {
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+.highlight-fee {
+    font-weight: 700;
+    color: rgb(0, 100, 158);
+    background-color: rgba(0, 100, 158, 0.06);
+}
+
+.pricing-note {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Proprietary table – wider cells */
+.proprietary-table td,
+.proprietary-table th {
+    font-size: 0.85rem;
+}
+
+/* Complexity table */
+.complexity-table td {
+    font-size: 0.9rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 700px) {
+    .pricing-section {
+        padding: 1.5rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        font-size: 0.75rem;
+        padding: 0.4rem;
+    }
+
+    .proprietary-table td,
+    .proprietary-table th {
+        font-size: 0.7rem;
+    }
 }

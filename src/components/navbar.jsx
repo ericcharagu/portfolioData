@@ -16,7 +16,7 @@ function NavBar() {
             <Nav.Link href="/" className="navLink">Home</Nav.Link>
             <Nav.Link href="/services" className="navLink">Services</Nav.Link>
             <Nav.Link href="/projects" className="navLink">Projects</Nav.Link>
-            <Nav.Link href="/about" className="navLink">About</Nav.Link>
+            {/* <Nav.Link href="/about" className="navLink">About</Nav.Link> */}
             <Nav.Link href="/contact" className="navLink">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>

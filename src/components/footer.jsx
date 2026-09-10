@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import { Col, Row } from "react-bootstrap";
 function Footer() {
   return (
     <div className="container-fluid" id="footerDiv">

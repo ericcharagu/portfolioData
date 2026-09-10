@@ -1,4 +1,4 @@
-import { Table, Card, Col, Image } from "react-bootstrap";
+import { Col, Image } from "react-bootstrap";
 import "./tools.css";
 import pyLogo from "../img/skills/py.png";
 import jupLogo from "../img/skills/jupyter.png";
