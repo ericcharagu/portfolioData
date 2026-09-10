@@ -39,10 +39,7 @@ function Cover() {
                 <span className="stat-number">100%</span>
                 <span className="stat-label">Open‑source stack</span>
               </div>
-              <div className="stat-item">
-                <span className="stat-number">24/7</span>
-                <span className="stat-label">Dedicated support & monitoring</span>
-              </div>
+              
             </Col>
           </Row>
         </Container>
